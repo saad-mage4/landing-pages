@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&display=swap");
+@keyframes bounce {
+  0% {
+    transform: translateY(-50%);
+  }
+  30% {
+    transform: translateY(-52%);
+  }
+  90% {
+    transform: translateY(-48%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-ib {
+  display: inline-block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  overflow: hidden auto;
+  margin-inline: auto;
+  font-family: "DM Sans", sans-serif;
+}
+body header {
+  min-height: 140px;
+  width: 100%;
+  background-color: #444;
+}
+body header .top-bar {
+  min-height: 50px;
+  background-color: #2658ce;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  font-size: 18px;
+}
+body header .top-bar .contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+}
+body header .top-bar .contact-links a {
+  font-weight: 500;
+}
+body header .top-bar .contact-links a span {
+  margin-left: 10px;
+}
+body header .top-bar .social-icons {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+body header .top-bar .social-icons span {
+  font-weight: 500;
+}
+body header .top-bar .social-icons .icons {
+  margin-top: 2px;
+}
+body header .top-bar .social-icons .icons a {
+  font-size: 22px;
+}
+body header .top-bar .social-icons .icons a:not(:first-child) {
+  margin-left: 10px;
+}
+body header .top-bar .social-icons .icons a:hover {
+  color: #ddd;
+}
+body header .main-menu {
+  min-height: 90px;
+  width: 100%;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  flex-direction: row;
+}
+body header .main-menu .logo-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+}
+body header .main-menu .logo-menu picture {
+  margin-right: 65px;
+}
+body header .main-menu .logo-menu picture img {
+  width: 150px;
+}
+body header .main-menu .logo-menu .MainMenu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: row;
+}
+body header .main-menu .logo-menu .MainMenu > ul > li {
+  position: relative;
+}
+body header .main-menu .logo-menu .MainMenu > ul > li > a {
+  font-size: 15px;
+  font-weight: 500;
+  padding-block: 10px;
+}
+body header .main-menu .logo-menu .MainMenu > ul > li .dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 450px;
+  min-width: 220px;
+  width: 100%;
+  left: 0;
+  top: 28px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 6px;
+  background-color: #f5f7fd;
+  border-radius: 5px;
+}
+body header .main-menu .logo-menu .MainMenu > ul > li .dropdown li a {
+  color: #202020;
+  font-size: 15px;
+}
+body header .main-menu .logo-menu .MainMenu > ul > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+body header .main-menu .search-register a.btn {
+  background-color: #2658ce;
+  color: #fff;
+  border-color: #fff;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+body main section.hero {
+  min-height: 400px;
+  background-color: #f5f7fd;
+  width: 100%;
+  position: relative;
+}
+body main section.hero .content {
+  max-width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+body main section.hero .content h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+body main section.hero .content p {
+  color: #444444;
+  margin-bottom: 25px;
+}
+body main section.hero .content a.btn {
+  background-color: #fff;
+  border-color: #2658ce;
+  color: #202020;
+  font-weight: 400;
+  padding-inline: 24px;
+}
+body main section.hero .img {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: bounce 3s infinite linear 0s;
+}
+body main section.hero .img img {
+  width: 350px;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
